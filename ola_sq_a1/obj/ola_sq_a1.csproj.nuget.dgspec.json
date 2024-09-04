@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\lijo2\\OneDrive\\Dokumenter\\GitHub\\OLA_SQ_A1\\ola_sq_a1\\ola_sq_a1.csproj": {}
+    "C:\\Users\\mrott\\Documents\\GitHub\\OLA_SQ_A1\\ola_sq_a1\\ola_sq_a1.csproj": {}
   },
   "projects": {
-    "C:\\Users\\lijo2\\OneDrive\\Dokumenter\\GitHub\\OLA_SQ_A1\\ola_sq_a1\\ola_sq_a1.csproj": {
+    "C:\\Users\\mrott\\Documents\\GitHub\\OLA_SQ_A1\\ola_sq_a1\\ola_sq_a1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\lijo2\\OneDrive\\Dokumenter\\GitHub\\OLA_SQ_A1\\ola_sq_a1\\ola_sq_a1.csproj",
+        "projectUniqueName": "C:\\Users\\mrott\\Documents\\GitHub\\OLA_SQ_A1\\ola_sq_a1\\ola_sq_a1.csproj",
         "projectName": "ola_sq_a1",
-        "projectPath": "C:\\Users\\lijo2\\OneDrive\\Dokumenter\\GitHub\\OLA_SQ_A1\\ola_sq_a1\\ola_sq_a1.csproj",
-        "packagesPath": "C:\\Users\\lijo2\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\lijo2\\OneDrive\\Dokumenter\\GitHub\\OLA_SQ_A1\\ola_sq_a1\\obj\\",
+        "projectPath": "C:\\Users\\mrott\\Documents\\GitHub\\OLA_SQ_A1\\ola_sq_a1\\ola_sq_a1.csproj",
+        "packagesPath": "C:\\Users\\mrott\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\mrott\\Documents\\GitHub\\OLA_SQ_A1\\ola_sq_a1\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\lijo2\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\mrott\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
