@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ola_sq_a1")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a7c46d19410018e525c18c8a3be3fdd93f8dfd30")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2091655ea8706b8ac519adcf15eacfc5e87a2fa4")]
 [assembly: System.Reflection.AssemblyProductAttribute("ola_sq_a1")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ola_sq_a1")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
