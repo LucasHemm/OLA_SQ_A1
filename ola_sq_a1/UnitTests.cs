@@ -37,7 +37,6 @@ public class UnitTests
         // Create a FakeTask instance
         FakeTask task = new FakeTask("Test", now, false, "Test");
     
-        // Assuming UpdateTask method needs to be adapted to work with FakeTask or this is just for demonstration
         task = (FakeTask) taskFacade.UpdateTask(task, "Test2", now, true, "Test2");
     
         Assert.Equal("Test2", task.Description);
