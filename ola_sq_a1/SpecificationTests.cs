@@ -16,7 +16,6 @@ public class SpecificationTests
         taskFacade = new TaskFacade(context);
     }
     
-    //Specification based test for IsOverdue
     [Fact]
     public void ShouldReturnTrueIfTaskIsOverdue()
     {
@@ -38,6 +37,14 @@ public class SpecificationTests
     {
         DateTime now = DateTime.Now;
         Task task = taskFacade.CreateTask("Test", now.AddMinutes(-1), true, "Test");
+        Assert.False(taskFacade.IsOverdue(task));
+    }
+    
+    [Fact]
+    public void ShouldReturnFalseIfNotOverdueAndFinished()
+    {
+        DateTime now = DateTime.Now;
+        Task task = taskFacade.CreateTask("Test", now.AddMinutes(1), true, "Test");
         Assert.False(taskFacade.IsOverdue(task));
     }
     

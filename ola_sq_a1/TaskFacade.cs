@@ -85,10 +85,6 @@ public class TaskFacade
     //Checks if task is overdue
     public bool IsOverdue(Task task)
     {
-        if( task.Deadline < DateTime.Now && !task.IsFinished)
-        {
-            return true;
-        }
-        return false;
+        return task.Deadline < DateTime.Now && !task.IsFinished;
     }
 }
