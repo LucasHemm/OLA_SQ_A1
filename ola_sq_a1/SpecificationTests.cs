@@ -17,7 +17,7 @@ public class SpecificationTests
     }
     
     [Fact]
-    public void ShouldReturnTrueIfTaskIsOverdue()
+    public void ShouldReturnTrueIfTaskIsOverdueAndNotFinished()
     {
         DateTime now = DateTime.Now;
         Task task = taskFacade.CreateTask("Test", now.AddMinutes(-1), false, "Test");
@@ -25,7 +25,7 @@ public class SpecificationTests
     }
     
     [Fact]
-    public void ShouldReturnFalseIfTaskIsNotOverdue()
+    public void ShouldReturnFalseIfTaskIsNotOverdueAndNotFinished()
     {
         DateTime now = DateTime.Now;
         Task task = taskFacade.CreateTask("Test", now.AddMinutes(1), false, "Test");
@@ -33,7 +33,7 @@ public class SpecificationTests
     }
     
     [Fact]
-    public void ShouldReturnFalseIfTaskIsFinished()
+    public void ShouldReturnFalseIfTaskIsOverdueAndFinished()
     {
         DateTime now = DateTime.Now;
         Task task = taskFacade.CreateTask("Test", now.AddMinutes(-1), true, "Test");
