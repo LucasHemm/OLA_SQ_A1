@@ -426,3 +426,4 @@ C:\Users\mrott\Documents\GitHub\OLA_SQ_A1\ola_sq_a1\obj\Debug\net8.0\refint\ola_
 C:\Users\mrott\Documents\GitHub\OLA_SQ_A1\ola_sq_a1\obj\Debug\net8.0\ola_sq_a1.pdb
 C:\Users\mrott\Documents\GitHub\OLA_SQ_A1\ola_sq_a1\obj\Debug\net8.0\ola_sq_a1.genruntimeconfig.cache
 C:\Users\mrott\Documents\GitHub\OLA_SQ_A1\ola_sq_a1\obj\Debug\net8.0\ref\ola_sq_a1.dll
+C:\Users\mrott\Documents\GitHub\OLA_SQ_A1\ola_sq_a1\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.InMemory.dll

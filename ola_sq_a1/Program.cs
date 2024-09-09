@@ -7,12 +7,12 @@ namespace ola_sq_a1
     {
         static void Main(string[] args)
         {
-            TaskFacade taskFacade = new TaskFacade();
+            ApplicationDbContext dbContext = new ApplicationDbContext();
+            TaskFacade taskFacade = new TaskFacade(dbContext);
             bool exit = false;
 
             while (!exit)
             {
-                Console.Clear();
                 Console.WriteLine("Task Manager");
                 Console.WriteLine("============");
                 Console.WriteLine("1. Add a new Task");
@@ -22,7 +22,9 @@ namespace ola_sq_a1
                 Console.WriteLine("5. Mark a Task as Unfinished");
                 Console.WriteLine("6. Delete a Task");
                 Console.WriteLine("7. View a Task by ID");
-                Console.WriteLine("8. Exit");
+                Console.WriteLine("8. Update Deadline");
+                Console.WriteLine("9. Check if tasks are overdue");
+                Console.WriteLine("10. Exit");
                 Console.WriteLine("Select an option: ");
                 
                 string choice = Console.ReadLine();
@@ -51,6 +53,12 @@ namespace ola_sq_a1
                         ViewTaskById(taskFacade);
                         break;
                     case "8":
+                        UpdateDeadline(taskFacade);
+                        break;
+                    case "9":
+                        CheckIfTasksAreOverdue(taskFacade);
+                        break;
+                    case "10":
                         exit = true;
                         break;
                     default:
@@ -60,6 +68,7 @@ namespace ola_sq_a1
 
                 Console.WriteLine("Press any key to continue...");
                 Console.ReadKey();
+                Console.Clear();
             }
         }
 
@@ -177,5 +186,39 @@ namespace ola_sq_a1
 
             Console.WriteLine($"ID: {task.Id}, Description: {task.Description}, Deadline: {task.Deadline}, Finished: {task.IsFinished}, Category: {task.Category}");
         }
+        
+        static void UpdateDeadline(TaskFacade taskFacade)
+        {
+            Console.WriteLine("Enter the Task ID to update deadline: ");
+            int id = int.Parse(Console.ReadLine());
+
+            Task task = taskFacade.GetTaskById(id);
+            if (task == null)
+            {
+                Console.WriteLine("Task not found.");
+                return;
+            }
+
+            Console.WriteLine("Enter new deadline (yyyy-mm-dd): ");
+            DateTime deadline = DateTime.Parse(Console.ReadLine());
+
+            taskFacade.UpdateDeadline(task, deadline);
+            taskFacade.SaveTask(task);
+            Console.WriteLine("Deadline updated successfully!");
+        }
+        
+        //Check if tasks are overdue
+        static void CheckIfTasksAreOverdue(TaskFacade taskFacade)
+        {
+            List<Task> tasks = taskFacade.GetAllTasks();
+            foreach (var task in tasks)
+            {
+                if (task.Deadline < DateTime.Now && !task.IsFinished)
+                {
+                    Console.WriteLine($"Task ID: {task.Id} is overdue!");
+                }
+            }
+        
     }
+}
 }

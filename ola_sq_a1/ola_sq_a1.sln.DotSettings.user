@@ -3,4 +3,11 @@
   &lt;TestAncestor&gt;&#xD;
     &lt;TestId&gt;xUnit::4E07C291-4180-43D9-8AFD-27F37EBFA770::net8.0::ola_sq_a1.UnitTest1&lt;/TestId&gt;&#xD;
   &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=83df76bd_002D24a0_002D4bcc_002D9bc3_002De060630a0b6d/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="Test1" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;xUnit::4E07C291-4180-43D9-8AFD-27F37EBFA770::net8.0::ola_sq_a1.IntegrationTests&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::4E07C291-4180-43D9-8AFD-27F37EBFA770::net8.0::ola_sq_a1.UnitTests&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::4E07C291-4180-43D9-8AFD-27F37EBFA770::net8.0::ola_sq_a1.SpecificationTests&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
 &lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>

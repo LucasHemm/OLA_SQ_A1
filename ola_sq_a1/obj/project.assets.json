@@ -472,6 +472,22 @@
           "build/net8.0/Microsoft.EntityFrameworkCore.Design.props": {}
         }
       },
+      "Microsoft.EntityFrameworkCore.InMemory/8.0.8": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "8.0.8"
+        },
+        "compile": {
+          "lib/net8.0/Microsoft.EntityFrameworkCore.InMemory.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/Microsoft.EntityFrameworkCore.InMemory.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "Microsoft.EntityFrameworkCore.Relational/8.0.8": {
         "type": "package",
         "dependencies": {
@@ -3926,6 +3942,21 @@
         "lib/net8.0/Microsoft.EntityFrameworkCore.Design.xml",
         "microsoft.entityframeworkcore.design.8.0.8.nupkg.sha512",
         "microsoft.entityframeworkcore.design.nuspec"
+      ]
+    },
+    "Microsoft.EntityFrameworkCore.InMemory/8.0.8": {
+      "sha512": "B4r7MGPHUjuIdoI4dMvGFWK2vIT1svIgR3fITc+62ZHmbkRS+gq0mZ8BU9CXM388MfD5Tsn5KXJjWeu+b9gLlg==",
+      "type": "package",
+      "path": "microsoft.entityframeworkcore.inmemory/8.0.8",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "PACKAGE.md",
+        "lib/net8.0/Microsoft.EntityFrameworkCore.InMemory.dll",
+        "lib/net8.0/Microsoft.EntityFrameworkCore.InMemory.xml",
+        "microsoft.entityframeworkcore.inmemory.8.0.8.nupkg.sha512",
+        "microsoft.entityframeworkcore.inmemory.nuspec"
       ]
     },
     "Microsoft.EntityFrameworkCore.Relational/8.0.8": {
@@ -9194,6 +9225,7 @@
   "projectFileDependencyGroups": {
     "net8.0": [
       "Microsoft.EntityFrameworkCore.Design >= 8.0.8",
+      "Microsoft.EntityFrameworkCore.InMemory >= 8.0.8",
       "Microsoft.EntityFrameworkCore.SqlServer >= 8.0.8",
       "Microsoft.EntityFrameworkCore.Tools >= 8.0.8",
       "Microsoft.NET.Test.Sdk >= 17.8.0",
@@ -9203,19 +9235,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\lijo2\\.nuget\\packages\\": {}
+    "C:\\Users\\mrott\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\lijo2\\OneDrive\\Dokumenter\\GitHub\\OLA_SQ_A1\\ola_sq_a1\\ola_sq_a1.csproj",
+      "projectUniqueName": "C:\\Users\\mrott\\Documents\\GitHub\\OLA_SQ_A1\\ola_sq_a1\\ola_sq_a1.csproj",
       "projectName": "ola_sq_a1",
-      "projectPath": "C:\\Users\\lijo2\\OneDrive\\Dokumenter\\GitHub\\OLA_SQ_A1\\ola_sq_a1\\ola_sq_a1.csproj",
-      "packagesPath": "C:\\Users\\lijo2\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\lijo2\\OneDrive\\Dokumenter\\GitHub\\OLA_SQ_A1\\ola_sq_a1\\obj\\",
+      "projectPath": "C:\\Users\\mrott\\Documents\\GitHub\\OLA_SQ_A1\\ola_sq_a1\\ola_sq_a1.csproj",
+      "packagesPath": "C:\\Users\\mrott\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\mrott\\Documents\\GitHub\\OLA_SQ_A1\\ola_sq_a1\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\lijo2\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\mrott\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -9250,6 +9282,10 @@
           "Microsoft.EntityFrameworkCore.Design": {
             "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
             "suppressParent": "All",
+            "target": "Package",
+            "version": "[8.0.8, )"
+          },
+          "Microsoft.EntityFrameworkCore.InMemory": {
             "target": "Package",
             "version": "[8.0.8, )"
           },

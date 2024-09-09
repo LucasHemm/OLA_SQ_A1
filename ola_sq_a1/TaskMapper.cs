@@ -2,8 +2,12 @@
 
 public class TaskMapper
 {
-    private ApplicationDbContext context = new ApplicationDbContext();
+    private ApplicationDbContext context;
     
+    public TaskMapper(ApplicationDbContext context)
+    {
+        this.context = context;
+    }
     
     //This method creates takes a task object and creates a new task in the database
     public void AddTask(Task task)

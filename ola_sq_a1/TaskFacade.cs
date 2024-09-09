@@ -3,17 +3,19 @@
 public class TaskFacade
 {
     
-    TaskMapper taskMapper = new TaskMapper();
+    
+    //constructor
+    public TaskFacade(ApplicationDbContext context)
+    {
+        taskMapper = new TaskMapper(context);
+    }
+    
+    TaskMapper taskMapper;
     //Create a Task
     public Task CreateTask( string description, DateTime deadline, bool IsFinished, string category)
     {
         Task task = new Task
-        {
-            Description = description,
-            Deadline = deadline,
-            IsFinished = IsFinished,
-            Category = category
-        };
+        ( description, deadline, IsFinished, category);
         return task;
     }
     
@@ -33,6 +35,13 @@ public class TaskFacade
         task.Deadline = deadline;
         task.IsFinished = IsFinished;
         task.Category = category;
+        return task;
+    }
+    
+    //Update deadline
+    public Task UpdateDeadline(Task task, DateTime deadline)
+    {
+        task.Deadline = deadline;
         return task;
     }
     
@@ -71,5 +80,15 @@ public class TaskFacade
     public void DeleteTask(Task task)
     {
         taskMapper.DeleteTask(task);
+    }
+    
+    //Checks if task is overdue
+    public bool IsOverdue(Task task)
+    {
+        if( task.Deadline < DateTime.Now && !task.IsFinished)
+        {
+            return true;
+        }
+        return false;
     }
 }
